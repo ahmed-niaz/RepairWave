@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Rubik+Doodle+Triangles&family=Rubik+Scribble&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+#background_one {
+  width: 100%;
+  height: 600px;
+  background-image: url(../image/image1.jpg);
+  background-size: cover;
+}
+
+#logo p {
+  font-family: Rubik Scribble;
+  color: #000;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0 0 0;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.intro {
+  padding: 150px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 55px;
+  font-weight: 600;
+}
+p {
+  font-size: 25px;
+  font-weight: 400;
+}
+button {
+  margin: 25px 0 0 0;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+}
+
+#services .part_one {
+  height: 250px;
+  padding: 150px;
+  background-color: #ffb703;
+  text-align: center;
+}
+
+#services .part_two {
+  padding: 150px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#services .flex-container {
+  
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  background-color: #ffb703;
+  width: 50%;
+  margin: 20px;
+  padding: 50px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #ffb703;
+}
+.box img {
+  width: 30%;
+  height: 30%;
+  padding: 16px;
+}
+.box h5{
+    margin: 0 0 15px 0;
+}
+.box p {
+  font-size: 10px;
+  
+}
+
+.box a{
+    text-decoration: none;
+}
