@@ -1,19 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&family=Rubik+Doodle+Triangles&family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Poppins;
+  font-family: "Roboto Mono", monospace;
 }
 
-#background_one {
+.container {
   width: 100%;
-  height: 600px;
+  height: 100%;
+  max-width: 1280;
+  margin: 0 auto;
+}
+
+.banner {
   background-image: url(../image/image1.jpg);
   background-size: cover;
 }
 
+.navigation {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
 #logo p {
   font-family: Rubik Scribble;
   color: #000;
@@ -21,13 +31,7 @@
   font-weight: 900;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 0 0 0;
-}
-
-li {
+.navigation ul li {
   display: inline;
   margin: 0 10px;
   list-style: none;
@@ -35,69 +39,179 @@ li {
   font-weight: 600;
 }
 
-.intro {
-  padding: 150px;
+.banner-text {
+  padding: 50px;
   text-align: center;
 }
 
-h4 {
-  font-size: 55px;
+.banner-text h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+.banner-text h2 {
+  font-size: 40px;
   font-weight: 600;
 }
-p {
-  font-size: 25px;
-  font-weight: 400;
+.banner-text p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
-button {
-  margin: 25px 0 0 0;
+.banner-btn {
+  width: 200px;
+  height: 64px;
+  margin-bottom: 20px;
   padding: 10px;
-  background-color: #000;
+  background: linear-gradient(40deg, rgba(0,0,0,1) 1%, rgba(101,98,83,1) 29%, rgba(255,183,3,1) 50%, rgba(206,156,28,1) 66%, rgba(103,95,74,1) 100%);
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 15px;
-}
-
-#services .part_one {
-  height: 250px;
-  padding: 150px;
-  background-color: #ffb703;
-  text-align: center;
-}
-
-#services .part_two {
-  padding: 150px;
-  background-color: #fff;
-  text-align: center;
-}
-
-#services .flex-container {
-  
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-.box {
-  background-color: #ffb703;
-  width: 50%;
-  margin: 20px;
-  padding: 50px;
-  align-items: center;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #ffb703;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 2s;
 }
-.box img {
-  width: 30%;
-  height: 30%;
-  padding: 16px;
+.services {
+  width: 80%;
+  margin: 120px auto;
 }
-.box h5{
-    margin: 0 0 15px 0;
-}
-.box p {
-  font-size: 10px;
-  
+.services .services-heading {
+  height: 100%;
+  padding: 150px;
+  background: linear-gradient(
+    40deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(101, 98, 83, 1) 36%,
+    rgba(255, 183, 3, 1) 74%,
+    rgba(255, 183, 3, 1) 100%
+  );
+  text-align: center;
+  border-radius: 18px;
 }
 
-.box a{
-    text-decoration: none;
+.services-heading h1{
+  font-size: 40px;
+
+}
+.services-heading p{
+  margin: 40px auto;
+}
+
+.services-btn{
+  width: 300px;
+  height: 64px;
+  padding: 10px;
+  background: linear-gradient(42deg, rgba(255,183,3,1) 0%, rgba(0,0,0,1) 50%, rgba(255,183,3,0.9808298319327731) 100%);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.services-container h1{
+  margin: 100px 0;
+  font-size: 55px;
+  text-align: center;
+}
+.box-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+}
+
+.box{
+  padding: 35px;
+  background-color: #ffb703;
+  border-radius: 16px;
+}
+
+.box img{
+  background-color: #fff;
+  border-radius: 50px 25px;
+  margin-bottom: 10px;
+}
+
+.box h2{
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  .navigation {
+    flex-direction: column;
+  }
+  #logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .navigation ul {
+    margin: 0 auto;
+  }
+  .navigation ul li {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .banner-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .banner-text h2 {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+  .services-btn{
+    width: 80%;
+    height: 50%;
+    font-size: 60%;
+  }
+  .services {
+    width: 100%;
+  }
+  .services-heading h1{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+  
+  }
+  .services-heading p{
+    font-weight: 700;
+    width: 100%;
+  }
+  
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .navigation {
+    flex-direction: column;
+  }
+  #logo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .navigation ul {
+    margin: 0 auto;
+  }
+  .navigation ul li {
+    font-size: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .banner-text h2 {
+    font-size: 25px;
+  }
+  .banner-text p {
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
 }
