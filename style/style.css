@@ -6,7 +6,9 @@
   padding: 0;
   font-family: "Roboto Mono", monospace;
 }
-
+p{
+  color: #212529;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -140,6 +142,17 @@
 .box h2{
   margin-bottom: 20px;
 }
+.box p{
+  margin-bottom: 20px;
+}
+
+.box a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 @media screen and (max-width: 576px) {
   .navigation {
     flex-direction: column;
@@ -185,6 +198,10 @@
     font-weight: 700;
     width: 100%;
   }
+
+  .box-container{
+    grid-template-columns: auto;
+  }
   
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -213,5 +230,9 @@
   .banner-text p {
     font-size: 10px;
     margin-bottom: 40px;
+  }
+
+  .box-container{
+    grid-template-columns: auto;
   }
 }
